@@ -1,10 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="no">
 <head>
-    <title>My Website</title>
+    <meta charset="UTF-8">
+    <title>Odd Magnus Grinder - Teknologiens Mester</title>
+    <style>
+        /* Global stil */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+
+        /* Hovedbilde med sitat */
+        .main-image {
+            position: relative;
+            width: 100%;
+        }
+
+        .main-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .quote {
+            position: absolute;
+            top: 40%;
+            left: 5%;
+            transform: translateY(-50%);
+            max-width: 50%;
+            text-align: center;
+        }
+
+        .quote h1 {
+            font-size: 5.5em;
+            color: #fff;
+            margin: 0;
+        }
+
+        /* Seksjoner under hovedbildet */
+        .content-section {
+            display: flex;
+            align-items: center;
+            padding: 50px;
+        }
+
+        .content-section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .content-section img {
+            width: 45%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .content-section .text {
+            width: 50%;
+            padding: 20px;
+        }
+
+        .content-section .text h2 {
+            font-size: 2em;
+            color: #00adb5;
+            margin-bottom: 20px;
+        }
+
+        .content-section .text p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1f1f1f;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Responsivitet */
+        @media (max-width: 768px) {
+            .quote h1 {
+                font-size: 1.8em;
+            }
+
+            .content-section {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .content-section img, .content-section .text {
+                width: 100%;
+            }
+
+            .content-section .text {
+                padding: 20px 0;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a sample HTML page.</p>
+
+    <!-- Hovedbilde med sitat på høyre side -->
+    <div class="main-image">
+        <img src="pic10.png" alt="Odd Magnus Grinder">
+        <div class="quote">
+            <h1>"It’s hard to be humble when you’re as great as I am."</h1>
+        </div>
+    </div>
+
+    <!-- Seksjoner med bilder og arrogant tekst -->
+    <div class="content-section">
+        <img src="pic9.png" alt="Odd Magnus Grinder">
+        <div class="text">
+            <h2>The Infallible Genius</h2>
+            <p>"I don’t need caffeine; my brain runs on pure genius."</p>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <img src="pic4.png" alt="Odd Magnus Grinder">
+        <div class="text">
+            <h2>The Walking Perfection</h2>
+            <p>"Why settle for good when you can have me?"</p>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <img src="pic3.png" alt="Odd Magnus Grinder">
+        <div class="text">
+            <h2>The Master of Logic</h2>
+            <p>"I don’t do trial and error. I do trial and success."</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Odd Magnus Grinder. Expect the extraordinary.</p>
+        <p>Here’s my email: <a href="mailto:oddmagnus@example.com" style="color: #00adb5;">oddmagnus@grindr.no</a>. Use it wisely, as I don’t waste my time on the average." </p>
+    </footer>
+
 </body>
 </html>
