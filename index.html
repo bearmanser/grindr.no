@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Odd Magnus Grinder - The Pinnacle of Perfection</title>
     <style>
-        /* Global stil */
+        /* Global styling */
         body {
             margin: 0;
             padding: 0;
@@ -13,7 +13,7 @@
             color: #ffffff;
         }
 
-        /* Hovedbilde med sitat */
+        /* Main image with quote */
         .main-image {
             position: relative;
             width: 100%;
@@ -40,7 +40,7 @@
             margin: 0;
         }
 
-        /* Seksjoner under hovedbildet */
+        /* Sections below the main image */
         .content-section {
             display: flex;
             align-items: center;
@@ -81,30 +81,44 @@
             text-align: center;
         }
 
-        /* Responsivitet */
+        /* Responsiveness */
         @media (max-width: 768px) {
+            /* Make the first quote full width */
+            .main-image .quote {
+            }
+
             .quote h1 {
                 font-size: 1.8em;
             }
 
+            /* Stack images and text vertically */
             .content-section {
                 flex-direction: column;
+                align-items: center;
                 padding: 20px;
+                text-align: center;
             }
 
-            .content-section img, .content-section .text {
+            /* Remove reverse direction on even sections */
+            .content-section:nth-child(even) {
+                flex-direction: column;
+            }
+
+            .content-section img {
                 width: 100%;
+                margin-bottom: 20px;
             }
 
             .content-section .text {
-                padding: 20px 0;
+                width: 100%;
+                padding: 0 20px;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Hovedbilde med sitat på høyre side -->
+    <!-- Main image with quote -->
     <div class="main-image">
         <img src="pic10.png" alt="Odd Magnus Grinder">
         <div class="quote">
@@ -112,7 +126,7 @@
         </div>
     </div>
 
-    <!-- Seksjoner med bilder og arrogant tekst -->
+    <!-- Sections with images and quotes -->
     <div class="content-section">
         <img src="pic9.png" alt="Odd Magnus Grinder">
         <div class="text">
@@ -140,7 +154,7 @@
     <!-- Footer -->
     <footer>
         <p>&copy; 2023 Odd Magnus Grinder. Expect the extraordinary.</p>
-        <p>Here’s my email: <a href="mailto:oddmagnus@example.com" style="color: #00adb5;">oddmagnus@grindr.no</a>. Use it wisely, as I don’t waste my time on the average." </p>
+        <p>Here’s my email: <a href="mailto:oddmagnus@grindr.no" style="color: #00adb5;">oddmagnus@grindr.no</a>. Use it wisely, as I don’t waste my time on the average." </p>
     </footer>
 
 </body>
