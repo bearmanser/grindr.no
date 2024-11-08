@@ -1,161 +1,186 @@
 <!DOCTYPE html>
 <html lang="no">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Odd Magnus Grinder - The Pinnacle of Perfection</title>
     <style>
-        /* Global styling */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #1a1a1a;
-            color: #ffffff;
-        }
+      /* Global styling */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Arial", sans-serif;
+        background-color: #1a1a1a;
+        color: #ffffff;
+      }
 
-        /* Main image with quote */
-        .main-image {
-            position: relative;
-            width: 100%;
-        }
+      /* Main image with quote */
+      .main-image {
+        position: relative;
+        width: 100%;
+      }
 
+      .main-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+      }
+
+      .quote {
+        position: absolute;
+        top: 40%;
+        left: 5%;
+        transform: translateY(-50%);
+        max-width: 50%;
+        text-align: center;
+      }
+
+      .quote h1 {
+        font-size: 2.5em;
+        color: #fff;
+        margin: 0;
+      }
+
+      /* Sections below the main image */
+      .content-section {
+        display: flex;
+        align-items: center;
+        padding: 50px;
+      }
+
+      .content-section:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+
+      .content-section img {
+        width: 45%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .content-section .text {
+        width: 50%;
+        padding: 20px;
+      }
+
+      .content-section .text h2 {
+        font-size: 2em;
+        color: #00adb5;
+        margin-bottom: 20px;
+      }
+
+      .content-section .text p {
+        font-size: 1.2em;
+        line-height: 1.6;
+      }
+
+      .align-end {
+        text-align: end;
+      }
+
+      /* Footer */
+      footer {
+        background-color: #1f1f1f;
+        color: #ffffff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      /* Responsiveness */
+      @media (max-width: 768px) {
         .main-image img {
-            width: 100%;
-            height: auto;
-            display: block;
+          height: 100vh; /* Adjust as needed to control image height */
+          object-position: 75% 0; /* Shifts the image to the left */
         }
-
-        .quote {
-            position: absolute;
-            top: 40%;
-            left: 5%;
-            transform: translateY(-50%);
-            max-width: 50%;
-            text-align: center;
+        /* Make the first quote full width */
+        .main-image .quote {
+          max-width: 100%;
+        top: 0%;
+        left: 0%;
         }
 
         .quote h1 {
-            font-size: 5.5em;
-            color: #fff;
-            margin: 0;
+        background-color: #0000008d;
+        padding: 4px;
+        margin-top: 100vh;
+          font-size: 3em;
         }
 
-        /* Sections below the main image */
+        /* Stack images and text vertically */
         .content-section {
-            display: flex;
-            align-items: center;
-            padding: 50px;
+          flex-direction: column;
+          align-items: center;
+          padding: 20px;
+          margin-top: 20vh;
+          margin-bottom: 10vh;
         }
 
+        /* Remove reverse direction on even sections */
         .content-section:nth-child(even) {
-            flex-direction: row-reverse;
+          flex-direction: column;
         }
 
         .content-section img {
-            width: 45%;
-            height: auto;
-            object-fit: cover;
+          width: 100%;
+          margin-bottom: 20px;
         }
 
         .content-section .text {
-            width: 50%;
-            padding: 20px;
+          width: 100%;
+          padding: 0 20px;
         }
-
-        .content-section .text h2 {
-            font-size: 2em;
-            color: #00adb5;
-            margin-bottom: 20px;
-        }
-
-        .content-section .text p {
-            font-size: 1.2em;
-            line-height: 1.6;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #1f1f1f;
-            color: #ffffff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        /* Responsiveness */
-        @media (max-width: 768px) {
-            /* Make the first quote full width */
-            .main-image .quote {
-            }
-
-            .quote h1 {
-                font-size: 1.8em;
-            }
-
-            /* Stack images and text vertically */
-            .content-section {
-                flex-direction: column;
-                align-items: center;
-                padding: 20px;
-                text-align: center;
-            }
-
-            /* Remove reverse direction on even sections */
-            .content-section:nth-child(even) {
-                flex-direction: column;
-            }
-
-            .content-section img {
-                width: 100%;
-                margin-bottom: 20px;
-            }
-
-            .content-section .text {
-                width: 100%;
-                padding: 0 20px;
-            }
-        }
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Main image with quote -->
     <div class="main-image">
-        <img src="pic10.png" alt="Odd Magnus Grinder">
-        <div class="quote">
-            <h1>"It’s hard to be humble when you’re as great as I am."</h1>
-        </div>
+        <picture>
+            <!-- Mobile image (pic7) for screens 768px wide or less -->
+            <source srcset="pic7.png" media="(max-width: 768px)">
+            <!-- Default image (pic10) for larger screens -->
+            <img src="pic10.png" alt="Odd Magnus Grinder">
+        </picture>
+      <div class="quote">
+        <h1>"It’s hard to be humble when you’re as great as I am."</h1>
+      </div>
     </div>
 
     <!-- Sections with images and quotes -->
     <div class="content-section">
-        <img src="pic9.png" alt="Odd Magnus Grinder">
-        <div class="text">
-            <h2>The Infallible Genius</h2>
-            <p>"I don’t need caffeine; my brain runs on pure genius."</p>
-        </div>
+      <img src="pic9.png" alt="Odd Magnus Grinder" />
+      <div class="text">
+        <h2>The Infallible Genius</h2>
+        <p>"I don’t need caffeine; my brain runs on pure genius."</p>
+      </div>
     </div>
 
     <div class="content-section">
-        <img src="pic4.png" alt="Odd Magnus Grinder">
-        <div class="text">
-            <h2>The Walking Perfection</h2>
-            <p>"Why settle for good when you can have me?"</p>
-        </div>
+      <img src="pic4.png" alt="Odd Magnus Grinder" />
+      <div class="text align-end">
+        <h2>The Walking Perfection</h2>
+        <p>"Why settle for good when you can have me?"</p>
+      </div>
     </div>
 
     <div class="content-section">
-        <img src="pic3.png" alt="Odd Magnus Grinder">
-        <div class="text">
-            <h2>The Master of Logic</h2>
-            <p>"I don’t do trial and error. I do trial and success."</p>
-        </div>
+      <img src="pic3.png" alt="Odd Magnus Grinder" />
+      <div class="text">
+        <h2>The Master of Logic</h2>
+        <p>"I don’t do trial and error. I do trial and success."</p>
+      </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2023 Odd Magnus Grinder. Expect the extraordinary.</p>
-        <p>Here’s my email: <a href="mailto:oddmagnus@grindr.no" style="color: #00adb5;">oddmagnus@grindr.no</a>. Use it wisely, as I don’t waste my time on the average." </p>
+      <p>&copy; 2029 Odd Magnus Grinder. Expect the extraordinary.</p>
+      <p>
+        Here’s my email:
+        <a href="mailto:oddmagnus@grindr.no" style="color: #00adb5"
+          >oddmagnus@grindr.no</a
+        >. Use it wisely, as I don’t waste my time on the average."
+      </p>
     </footer>
-
-</body>
+  </body>
 </html>
