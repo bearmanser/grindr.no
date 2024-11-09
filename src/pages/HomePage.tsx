@@ -74,24 +74,85 @@ export function HomePage() {
       <ItemGrid
         title="The Tools of a Visionary"
         items={[
+          "skills/html_logo.png",
+          "skills/css_logo.png",
+          "skills/javascript_logo.png",
+          "skills/typescript_logo.png",
           "skills/react_native_logo.png",
+          "skills/chakra_ui_logo.png",
+          "skills/tailwind_logo.png",
+          "skills/vite_logo.png",
+          "skills/webpack_logo.png",
+      
           "skills/fastapi_logo.png",
           "skills/django_logo.png",
           "skills/flask_logo.png",
-          "skills/crestron_logo.png",
-          "skills/git_logo.png",
-          "skills/github_logo.png",
-          "skills/esp32_logo.png",
-          "skills/ai_logo.png",
+          "skills/nodejs_logo.png",
+          "skills/mqtt_logo.png",
+          "skills/chirpstack_logo.png",
+          "skills/lora_wan_logo.png",
+          "skills/knx_logo.png",
+          "skills/modbus_logo.png",
+          "skills/mbus_logo.png",
+          "skills/circut_board_logo.png",
+          "skills/websocket_logo.png",
+          "skills/nginx_logo.png",
+          "skills/linux_logo.png",
+          "skills/google_cloud_logo.png",
+          "skills/docker_logo.png",
+      
           "skills/python_logo.png",
           "skills/cplusplus_logo.png",
           "skills/csharp_logo.png",
-          "skills/html_logo.png",
-          "skills/javascript_logo.png",
-          "skills/photoshop_logo.png",
-          "skills/gamedev_logo.png",
+      
+          "skills/react_native_logo.png",
+          "skills/flutter_logo.png",
+          "skills/xamarin_logo.png",
+      
+          "skills/git_logo.png",
+          "skills/github_logo.png",
+          "skills/jira_logo.png",
+      
+          "skills/esp32_logo.png",
+          "skills/arduino_logo.png",
+          "skills/mqtt_logo.png",
+          "skills/crestron_logo.png",
+      
+          "skills/ai_logo.png",
+          "skills/tensorflow_logo.png",
+          "skills/pytorch_logo.png",
+          "skills/numpy_logo.png",
+          "skills/matplotlib_logo.png",
+          "skills/scipy_logo.png",
+          "skills/scikit_learn_logo.png",
+      
+          "skills/influx_logo.png",
+          "skills/maria_db_logo.png",
+          "skills/mongo_db_logo.png",
+          "skills/mysql_logo.png",
+      
+          "skills/vscode_logo.png",
+          "skills/prettier_logo.png",
+          "skills/eslint_logo.png",
+          "skills/postman_logo.png",
+          "skills/pytest_logo.png",
+
+          "skills/unity_logo.png",
+          "skills/unreal_logo.png",
           "skills/3d_design_logo.png",
-        ]}
+      
+          "skills/photoshop_logo.png",
+          "skills/garage_band.png",
+      
+          "skills/pornhub_logo.png",
+          "skills/charisma_logo.png",
+          "skills/arrogant_killer_clown.png",
+          "skills/homeassistant_logo.png",
+          "skills/windows_server_logo.png",
+          "skills/copyright_logo.png"
+      ]
+      
+      }        
         itemSize="100px"
       />
       <>
