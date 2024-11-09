@@ -134,53 +134,62 @@
     }
 
 
-    /* Responsiveness */
-    @media (max-width: 768px) {
-      .main-image img {
-        height: 100vh;
-        /* Adjust as needed to control image height */
-        object-position: 75% 0;
-        /* Shifts the image to the left */
-      }
-
-      /* Make the first quote full width */
-      .main-image .quote {
-        max-width: 100%;
-        top: 0%;
-        left: 0%;
-      }
-
-      .quote h1 {
-        background-color: #0000008d;
-        padding: 4px;
-        margin-top: 100vh;
-        font-size: 3em;
-      }
-
-      /* Stack images and text vertically */
-      .content-section {
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-        margin-top: 20vh;
-        margin-bottom: 10vh;
-      }
-
-      /* Remove reverse direction on even sections */
-      .content-section:nth-child(even) {
-        flex-direction: column;
-      }
-
-      .content-section img {
-        width: 100%;
-        margin-bottom: 20px;
-      }
-
-      .content-section .text {
-        width: 100%;
-        padding: 0 20px;
-      }
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .main-image img {
+      height: 100vh;
+      object-position: 43% 0;
     }
+
+    .main-image .quote {
+      max-width: 100%;
+      top: 0%;
+      left: 0%;
+      text-align: center;
+    }
+
+    .quote h1 {
+      background-color: #0000008d;
+      padding: 4px;
+      margin-top: 100vh;
+      font-size: 2.5em;
+    }
+
+    .content-section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      margin-top: 10vh;
+      margin-bottom: 5vh;
+    }
+
+    .content-section img {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+
+    .content-section .text {
+      width: 80%;
+      padding: 0 10px;
+      text-align: center;
+    }
+
+    .content-section .text h2 {
+      font-size: 1.5em;
+    }
+
+    .content-section .text.left-align {
+      text-align: center !important;
+      padding-right: 0;
+    }
+
+    .skills-grid {
+      grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+      gap: 10px;
+      justify-content: center;
+    }
+  }
   </style>
 </head>
 
@@ -189,7 +198,7 @@
   <div class="main-image">
     <picture>
       <!-- Mobile image (pic7) for screens 768px wide or less -->
-      <source srcset="pic7.png" media="(max-width: 768px)">
+      <source srcset="pic13.png" media="(max-width: 768px)">
       <!-- Default image (pic10) for larger screens -->
       <img src="pic13.png" alt="Odd Magnus Grinder">
     </picture>
@@ -198,8 +207,10 @@
     </div>
   </div>
 
+
+
   <!-- Sections with images and quotes -->
-  <div class="content-section image-right">
+  <div class="content-section image-left">
     <img src="pic9.png" alt="Odd Magnus Grinder" />
     <div class="text">
       <h2>The Infallible Genius</h2>
@@ -207,6 +218,68 @@
     </div>
   </div>
 
+
+  <div class="content-section  image-right">
+    <img src="pic4.png" alt="Odd Magnus Grinder" />
+    <div class="text">
+      <h2>The Walking Perfection</h2>
+      <p>"Why settle for good when you can have me?"</p>
+    </div>
+  </div>
+
+  <div class="content-section  image-left">
+    <img src="pic14.png" alt="Odd Magnus Grinder" />
+    <div class="text">
+      <h2>The Master of Logic</h2>
+      <p>"I don’t do trial and error. I do trial and success."</p>
+    </div>
+  </div>
+
+
+  <div class="content-section  image-right">
+    <img src="pic7.png" alt="Odd Magnus Grinder" />
+    <div class="text">
+      <h2>The Center of Attention</h2>
+      <p>"I don’t try to be the center of the universe; it just naturally orbits around me."</p>
+    </div>
+  </div>
+
+
+  <div class="content-section image-left">
+    <img src="pic11.png" alt="Odd Magnus Grinder" />
+    <div class="text">
+      <h2>The Effortlessly Elite</h2>
+      <p>"I don’t chase greatness. Greatness chases me."</p>
+    </div>
+  </div>
+
+  <div class="content-section image-right">
+    <img src="pic12.png" alt="Odd Magnus Grinder" />
+    <div class="text">
+      <h2>The Blueprint of Success</h2>
+      <p>"Others have dreams. I have plans."</p>
+    </div>
+  </div>
+
+  <hr />
+  <hr />
+  <div class="content-section  image-left">
+
+    <div class="text left-align">
+      <p>Projects Completed with Absolute Perfection: 1,248</p>
+      <p>Bugs Found and Obliterated: 10,000+</p>
+      <p>Lines of Code Written: 1,000,000+</p>
+      <p>Days Spent Idle (Because Everything’s Already Done): 365</p>
+      <p>Industries Disrupted: 12</p>
+      <p>Professional Awards (Self-Bestowed): Infinite</p>
+    </div>
+    <div class="text">
+      <h2>Proof of Excellence</h2>
+      <p>"Anyone can aim for success, but few achieve it like this. Each number here is a reminder that I don’t just
+        meet expectations—I leave them far behind."</p>
+    </div>
+  </div>
+  <hr />
 
   <hr />
   <div class="content-section  image-left">
@@ -226,14 +299,6 @@
     </div>
   </div>
   <hr />
-
-  <div class="content-section  image-right">
-    <img src="pic4.png" alt="Odd Magnus Grinder" />
-    <div class="text">
-      <h2>The Walking Perfection</h2>
-      <p>"Why settle for good when you can have me?"</p>
-    </div>
-  </div>
 
   <hr />
   <div class="content-section  image-left">
@@ -266,42 +331,6 @@
   </div>
   <hr />
 
-
-  <div class="content-section  image-right">
-    <img src="pic14.png" alt="Odd Magnus Grinder" />
-    <div class="text">
-      <h2>The Master of Logic</h2>
-      <p>"I don’t do trial and error. I do trial and success."</p>
-    </div>
-  </div>
-
-  <hr />
-  <div class="content-section  image-left">
-
-    <div class="text left-align">
-      <p>Projects Completed with Absolute Perfection: 1,248</p>
-      <p>Bugs Found and Obliterated: 10,000+</p>
-      <p>Lines of Code Written: 1,000,000+</p>
-      <p>Days Spent Idle (Because Everything’s Already Done): 365</p>
-      <p>Industries Disrupted: 12</p>
-      <p>Professional Awards (Self-Bestowed): Infinite</p>
-    </div>
-    <div class="text">
-      <h2>Proof of Excellence</h2>
-      <p>"Anyone can aim for success, but few achieve it like this. Each number here is a reminder that I don’t just
-        meet expectations—I leave them far behind."</p>
-    </div>
-  </div>
-  <hr />
-
-  <div class="content-section  image-right">
-    <img src="pic7.png" alt="Odd Magnus Grinder" />
-    <div class="text">
-      <h2>The Center of Attention</h2>
-      <p>"I don’t try to be the center of the universe; it just naturally orbits around me."</p>
-    </div>
-  </div>
-
   <hr />
   <div class="content-section  image-left">
     <div class="text left-align">
@@ -322,14 +351,6 @@
     </div>
   </div>
   <hr />
-
-  <div class="content-section image-right">
-    <img src="pic11.png" alt="Odd Magnus Grinder" />
-    <div class="text">
-      <h2>The Effortlessly Elite</h2>
-      <p>"I don’t chase greatness. Greatness chases me."</p>
-    </div>
-  </div>
 
   <hr />
   <div class="content-section  image-left">
@@ -354,14 +375,7 @@
     </div>
   </div>
   <hr />
-
-  <div class="content-section image-right">
-    <img src="pic12.png" alt="Odd Magnus Grinder" />
-    <div class="text">
-      <h2>The Blueprint of Success</h2>
-      <p>"Others have dreams. I have plans."</p>
-    </div>
-  </div>
+  <hr />
 
   <!-- Footer -->
   <footer>
