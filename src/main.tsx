@@ -2,13 +2,20 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import { ChakraProvider } from "@chakra-ui/react";
-import { HomePage } from "./pages/HomePage.tsx";
-import { system } from "./Theme.tsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HomePage } from "./pages/HomePage";
+import { system } from "./Theme";
+import { ComingSoon } from "./pages/ComingSoon";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ChakraProvider value={system}>
-      <HomePage />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/coming-soon" element={<ComingSoon />} />
+        </Routes>
+      </BrowserRouter>
     </ChakraProvider>
   </StrictMode>
 );

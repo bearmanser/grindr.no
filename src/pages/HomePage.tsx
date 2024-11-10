@@ -60,13 +60,34 @@ export function HomePage() {
       <ItemGrid
         title="Where Genius Meets Execution"
         items={[
-          "projects/iqu.png",
-          "projects/virtual_assistant.png",
-          "projects/fortress_of_the_undead.png",
-          "projects/this_incredible_website.png",
+          {
+            src: "projects/iqu.png",
+            title: "iQU",
+            link: "https://iqu.no/",
+            status: "In progress",
+          },
+          {
+            src: "projects/virtual_assistant.png",
+            title: "Virtual Assistant",
+            link: "coming-soon/",
+            status: "In progress",
+          },
+          {
+            src: "projects/fortress_of_the_undead.png",
+            title: "Fortress of the Undead",
+            link: "https://store.steampowered.com/app/2379830/Fortress_of_the_Undead/",
+            status: "Completed",
+          },
+          {
+            src: "projects/this_incredible_website.png",
+            title: "This Incredible Website",
+            link: "/",
+            status: "In progress",
+          },
         ]}
         itemSize="200px"
       />
+
       <>
         <Separator mt={16} mb={2} borderColor={"text.accent"} />
         <Separator mb={16} mt={2} borderColor={"text.accent"} />
@@ -74,87 +95,86 @@ export function HomePage() {
       <ItemGrid
         title="The Tools of a Visionary"
         items={[
-          "skills/html_logo.png",
-          "skills/css_logo.png",
-          "skills/javascript_logo.png",
-          "skills/typescript_logo.png",
-          "skills/react_native_logo.png",
-          "skills/chakra_ui_logo.png",
-          "skills/tailwind_logo.png",
-          "skills/vite_logo.png",
-          "skills/webpack_logo.png",
-      
-          "skills/fastapi_logo.png",
-          "skills/django_logo.png",
-          "skills/flask_logo.png",
-          "skills/nodejs_logo.png",
-          "skills/mqtt_logo.png",
-          "skills/chirpstack_logo.png",
-          "skills/lora_wan_logo.png",
-          "skills/knx_logo.png",
-          "skills/modbus_logo.png",
-          "skills/mbus_logo.png",
-          "skills/circut_board_logo.png",
-          "skills/websocket_logo.png",
-          "skills/nginx_logo.png",
-          "skills/linux_logo.png",
-          "skills/google_cloud_logo.png",
-          "skills/docker_logo.png",
-      
-          "skills/python_logo.png",
-          "skills/cplusplus_logo.png",
-          "skills/csharp_logo.png",
-      
-          "skills/react_native_logo.png",
-          "skills/flutter_logo.png",
-          "skills/xamarin_logo.png",
-      
-          "skills/git_logo.png",
-          "skills/github_logo.png",
-          "skills/jira_logo.png",
-      
-          "skills/esp32_logo.png",
-          "skills/arduino_logo.png",
-          "skills/mqtt_logo.png",
-          "skills/crestron_logo.png",
-      
-          "skills/ai_logo.png",
-          "skills/tensorflow_logo.png",
-          "skills/pytorch_logo.png",
-          "skills/numpy_logo.png",
-          "skills/matplotlib_logo.png",
-          "skills/scipy_logo.png",
-          "skills/scikit_learn_logo.png",
-      
-          "skills/influx_logo.png",
-          "skills/maria_db_logo.png",
-          "skills/mongo_db_logo.png",
-          "skills/mysql_logo.png",
-      
-          "skills/vscode_logo.png",
-          "skills/prettier_logo.png",
-          "skills/eslint_logo.png",
-          "skills/postman_logo.png",
-          "skills/pytest_logo.png",
+          { src: "skills/html_logo.png" },
+          { src: "skills/css_logo.png" },
+          { src: "skills/javascript_logo.png" },
+          { src: "skills/typescript_logo.png" },
+          { src: "skills/react_native_logo.png" },
+          { src: "skills/chakra_ui_logo.png" },
+          { src: "skills/tailwind_logo.png" },
+          { src: "skills/vite_logo.png" },
+          { src: "skills/webpack_logo.png" },
 
-          "skills/unity_logo.png",
-          "skills/unreal_logo.png",
-          "skills/3d_design_logo.png",
-      
-          "skills/photoshop_logo.png",
-          "skills/garage_band.png",
-      
-          "skills/pornhub_logo.png",
-          "skills/charisma_logo.png",
-          "skills/arrogant_killer_clown.png",
-          "skills/homeassistant_logo.png",
-          "skills/windows_server_logo.png",
-          "skills/copyright_logo.png"
-      ]
-      
-      }        
+          { src: "skills/fastapi_logo.png" },
+          { src: "skills/django_logo.png" },
+          { src: "skills/flask_logo.png" },
+          { src: "skills/nodejs_logo.png" },
+          { src: "skills/mqtt_logo.png" },
+          { src: "skills/chirpstack_logo.png" },
+          { src: "skills/lora_wan_logo.png" },
+          { src: "skills/knx_logo.png" },
+          { src: "skills/modbus_logo.png" },
+          { src: "skills/mbus_logo.png" },
+          { src: "skills/circut_board_logo.png" },
+          { src: "skills/websocket_logo.png" },
+          { src: "skills/nginx_logo.png" },
+          { src: "skills/linux_logo.png" },
+          { src: "skills/google_cloud_logo.png" },
+          { src: "skills/docker_logo.png" },
+
+          { src: "skills/python_logo.png" },
+          { src: "skills/cplusplus_logo.png" },
+          { src: "skills/csharp_logo.png" },
+
+          { src: "skills/react_native_logo.png" },
+          { src: "skills/flutter_logo.png" },
+          { src: "skills/xamarin_logo.png" },
+
+          { src: "skills/git_logo.png" },
+          { src: "skills/github_logo.png" },
+          { src: "skills/jira_logo.png" },
+
+          { src: "skills/esp32_logo.png" },
+          { src: "skills/arduino_logo.png" },
+          { src: "skills/mqtt_logo.png" },
+          { src: "skills/crestron_logo.png" },
+
+          { src: "skills/ai_logo.png" },
+          { src: "skills/tensorflow_logo.png" },
+          { src: "skills/pytorch_logo.png" },
+          { src: "skills/numpy_logo.png" },
+          { src: "skills/matplotlib_logo.png" },
+          { src: "skills/scipy_logo.png" },
+          { src: "skills/scikit_learn_logo.png" },
+
+          { src: "skills/influx_logo.png" },
+          { src: "skills/maria_db_logo.png" },
+          { src: "skills/mongo_db_logo.png" },
+          { src: "skills/mysql_logo.png" },
+
+          { src: "skills/vscode_logo.png" },
+          { src: "skills/prettier_logo.png" },
+          { src: "skills/eslint_logo.png" },
+          { src: "skills/postman_logo.png" },
+          { src: "skills/pytest_logo.png" },
+
+          { src: "skills/unity_logo.png" },
+          { src: "skills/unreal_logo.png" },
+          { src: "skills/3d_design_logo.png" },
+
+          { src: "skills/photoshop_logo.png" },
+          { src: "skills/garage_band.png" },
+
+          { src: "skills/pornhub_logo.png" },
+          { src: "skills/charisma_logo.png" },
+          { src: "skills/arrogant_killer_clown.png" },
+          { src: "skills/homeassistant_logo.png" },
+          { src: "skills/windows_server_logo.png" },
+          { src: "skills/copyright_logo.png" },
+        ]}
         itemSize="100px"
       />
+
       <>
         <Separator mt={16} mb={2} borderColor={"text.accent"} />
         <Separator mb={16} mt={2} borderColor={"text.accent"} />

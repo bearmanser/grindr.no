@@ -16,6 +16,11 @@ export const system = createSystem(defaultConfig, {
         skillGrid: {
           background: { value: "#222" }, // Background for skill grid items
         },
+        status: {
+          green: { value: "#5cbc60" }, // Background for skill grid items
+          yellow: { value: "#f8f4ca" }, // Background for skill grid items
+          red: { value: "#cd3e4d" }, // Background for skill grid items
+        },
       },
       fonts: {
         heading: { value: "CustomFont, sans-serif" },
