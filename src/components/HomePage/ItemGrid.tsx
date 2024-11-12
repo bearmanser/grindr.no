@@ -42,7 +42,13 @@ export function ItemGrid({ title, items, itemSize }: ItemGridProps) {
 
   return (
     <Box>
-      <Heading textAlign="center" fontSize="2em" color="text.accent" mb="20px">
+      <Heading
+        textAlign="center"
+        fontSize="2em"
+        color="text.accent"
+        mb="20px"
+        lineHeight={{ base: "1.2", md: "1.4" }}
+      >
         {title}
       </Heading>
       <SimpleGrid

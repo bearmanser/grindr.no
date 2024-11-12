@@ -52,7 +52,12 @@ export function ContentSection({
         mb={{ base: "20px", md: "0" }}
       />
       <Box width={{ base: "80%", md: "50%" }} p="20px">
-        <Heading fontSize="lg" color="text.accent" mb="20px">
+        <Heading
+          fontSize="lg"
+          color="text.accent"
+          mb="20px"
+          lineHeight={{ base: "1.2", md: "1.4" }}
+        >
           {title}
         </Heading>
         <Text fontSize="md" lineHeight="1.6">

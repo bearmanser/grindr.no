@@ -69,7 +69,7 @@ export function HomePage() {
           {
             src: "projects/virtual_assistant.png",
             title: "Virtual Assistant",
-            link: "coming-soon/",
+            link: "/#/coming-soon/",
             status: "In progress",
           },
           {
