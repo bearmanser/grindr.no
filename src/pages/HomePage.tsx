@@ -73,16 +73,22 @@ export function HomePage() {
             status: "In progress",
           },
           {
+            src: "projects/LightningMcQueenBrowserLogo.png",
+            title: "Lightning McQueen Browser",
+            link: "/#/coming-soon/",
+            status: "In progress",
+          },
+          {
             src: "projects/fortress_of_the_undead.png",
             title: "Fortress of the Undead",
             link: "https://store.steampowered.com/app/2379830/Fortress_of_the_Undead/",
             status: "Completed",
           },
           {
-            src: "projects/this_incredible_website.png",
-            title: "This Incredible Website",
-            link: "/",
-            status: "In progress",
+            src: "projects/grindrno.png",
+            title: "grindr.no",
+            link: "https://grindr.no/",
+            status: "Completed",
           },
         ]}
         itemSize="200px"

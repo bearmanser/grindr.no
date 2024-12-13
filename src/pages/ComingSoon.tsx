@@ -23,7 +23,7 @@ export function ComingSoon() {
             w={"100vw"}
         >
             <Heading fontSize={"3xl"}>Brace Yourself for Brilliance</Heading>
-            <Text fontSize={"lg"}>The internet’s finest is webpage will launch in {count} seconds!</Text>
+            <Text fontSize={"lg"}>The internet’s finest webpage will launch in {count} seconds!</Text>
         </Box>
     );
 }

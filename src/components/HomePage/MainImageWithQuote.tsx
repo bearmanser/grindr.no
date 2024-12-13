@@ -8,14 +8,14 @@ export function MainImageWithQuote() {
     <Box w={"100%"} overflow="hidden" position="relative">
       {/* Image for mobile */}
       <Image
-        src="pic20.png"
+        src="pic22.png"
         alt="Odd Magnus Grinder"
         w="100%"
         display={{ base: "block", md: "none" }}
       />
       {/* Image for desktop */}
       <Image
-        src="pic19.png"
+        src="pic21.png"
         alt="Odd Magnus Grinder"
         w="100%"
         display={{ base: "none", md: "block" }}
