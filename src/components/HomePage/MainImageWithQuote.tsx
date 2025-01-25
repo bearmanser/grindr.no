@@ -35,6 +35,7 @@ export function MainImageWithQuote() {
             fontSize={{ base: "lg", md: "lg", xl: "xl" }}
             lineHeight={{ base: "1.2", md: "1.4" }}
             display="inline-block"
+            fontFamily={"CustomFont, sans-serif"}
           >
             {quote.split("").map((char, index) => (
               <motion.span

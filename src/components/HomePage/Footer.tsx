@@ -9,7 +9,7 @@ export function Footer() {
         <Link href="mailto:oddmagnus@grindr.no" color="text.accent">
           oddmagnus@grindr.no
         </Link>
-        . Use it wisely, as I don’t waste my time on the average."
+        . Use it wisely, as I don’t waste my time on the average.
       </Text>
     </Box>
   );

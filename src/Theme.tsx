@@ -22,9 +22,6 @@ export const system = createSystem(defaultConfig, {
           red: { value: "#cd3e4d" }, // Background for skill grid items
         },
       },
-      fonts: {
-        heading: { value: "CustomFont, sans-serif" },
-      },
       fontSizes: {
         xl: { value: "4.5em" }, // Quote font size
         lg: { value: "2em" }, // Section title font size

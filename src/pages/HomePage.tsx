@@ -14,37 +14,37 @@ export function HomePage() {
         {
           title: "The Infallible Genius",
           text: "I don’t need caffeine; my brain runs on pure genius.",
-          image: "pic9.png",
+          image: "images_of_me/pic9.png",
           reverse: false,
         },
         {
           title: "The Walking Perfection",
           text: "Why settle for good when you can have me?",
-          image: "pic4.png",
+          image: "images_of_me/pic4.png",
           reverse: true,
         },
         {
           title: "The Master of Logic",
           text: "I don’t do trial and error. I do trial and success.",
-          image: "pic14.png",
+          image: "images_of_me/pic14.png",
           reverse: false,
         },
         {
           title: "The Center of Attention",
           text: "I don’t try to be the center of the universe; it just naturally orbits around me.",
-          image: "pic7.png",
+          image: "images_of_me/pic7.png",
           reverse: true,
         },
         {
           title: "The Effortlessly Elite",
           text: "I don’t chase greatness. Greatness chases me.",
-          image: "pic11.png",
+          image: "images_of_me/pic11.png",
           reverse: false,
         },
         {
           title: "The Blueprint of Success",
           text: "Others have dreams. I have plans.",
-          image: "pic12.png",
+          image: "images_of_me/pic12.png",
           reverse: true,
         },
       ].map((section, index) => (
@@ -75,8 +75,8 @@ export function HomePage() {
           {
             src: "projects/LightningMcQueenBrowserLogo.png",
             title: "Lightning McQueen Browser",
-            link: "/#/coming-soon/",
-            status: "In progress",
+            link: "/#/lightning-mcqueen-browser/",
+            status: "Completed",
           },
           {
             src: "projects/fortress_of_the_undead.png",
