@@ -61,6 +61,12 @@ export function HomePage() {
         title="Where Genius Meets Execution"
         items={[
           {
+            src: "projects/censored.png",
+            title: "3D Spaceship Pack",
+            link: "/#/coming-soon/",
+            status: "In progress",
+          },
+          {
             src: "projects/iqu.png",
             title: "iQU",
             link: "https://iqu.no/",
@@ -69,8 +75,8 @@ export function HomePage() {
           {
             src: "projects/virtual_assistant.png",
             title: "Virtual Assistant",
-            link: "/#/coming-soon/",
-            status: "In progress",
+            link: "https://github.com/bearmanser/MagnusAssistant",
+            status: "Completed",
           },
           {
             src: "projects/LightningMcQueenBrowserLogo.png",
