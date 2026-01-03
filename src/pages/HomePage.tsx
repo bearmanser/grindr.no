@@ -1,8 +1,8 @@
 import { Box, Separator } from "@chakra-ui/react";
 import { ContentSection } from "../components/HomePage/ContentSection";
 import { Footer } from "../components/HomePage/Footer";
-import { MainImageWithQuote } from "../components/HomePage/MainImageWithQuote";
 import { ItemGrid } from "../components/HomePage/ItemGrid";
+import { MainImageWithQuote } from "../components/HomePage/MainImageWithQuote";
 
 export function HomePage() {
   return (
@@ -61,16 +61,22 @@ export function HomePage() {
         title="Where Genius Meets Execution"
         items={[
           {
-            src: "projects/censored.png",
-            title: "3D Spaceship Pack",
-            link: "/#/coming-soon/",
+            src: "projects/climora.png",
+            title: "Climora",
+            link: "https://climora.no/",
             status: "In progress",
+          },
+          {
+            src: "projects/SpaceshipPack.png",
+            title: "3D Spaceship Pack",
+            link: "https://www.fab.com/it/listings/9c17be5e-07c6-4633-b447-f7bdbc6c5e1c",
+            status: "Completed",
           },
           {
             src: "projects/iqu.png",
             title: "iQU",
             link: "https://iqu.no/",
-            status: "In progress",
+            status: "Completed",
           },
           {
             src: "projects/virtual_assistant.png",
